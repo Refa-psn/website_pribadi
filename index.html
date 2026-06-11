@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refa Puji Setya Ningsih – Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-brand">Refa Puji Setya Ningsih</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        &#9776;
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#portfolio" class="nav-link">Work</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi There!</p>
+        <h1 class="hero-name">I'm Refa Puji Setya Ningsih</h1>
+        <span class="badge">Informatics Student &amp; Visual Designer</span>
+        <p class="hero-tagline">
+          Creating visuals and learning to code, one project at a time.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#portfolio" class="btn btn-outline">View My Work</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-img-frame">
+          <img
+            src="KMOU3599.jpg.jpeg"
+            alt="Refa Puji Setya Ningsih"
+            onerror="this.style.display = 'none'
+          />
+          <div class="hero-img-placeholder">
+            <span>R</span>
+          </div>
+        </div>
+        <div class="hero-accent-ring"></div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT I DO ===== -->
+    <section class="services" id="services">
+      <div class="section-header">
+        <h2 class="section-title">What I Do</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="services-grid">
+        <div
+          class="service-card"
+          data-aos
+          onclick="openModal('DSCF8843 4R.JPG.jpeg')"
+          style="cursor: pointer"
+        >
+          <div class="service-img">
+            <div class="service-icon">🖼️</div>
+          </div>
+          <h3>Photo Editing</h3>
+          <p>"Retouching and enhancing photos using Adobe Photoshop."</p>
+        </div>
+
+        <div
+          class="service-card featured"
+          data-aos
+          onclick="openModal('Hari Raya Waisak.png')"
+          style="cursor: pointer"
+        >
+          <div class="service-img">
+            <div class="service-icon">🎨</div>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>"Creating posters and visual content for social media."</p>
+        </div>
+
+        <div
+          class="service-card"
+          data-aos
+          onclick="openModal('FOTO_WEB_DESIGN.jpg')"
+          style="cursor: pointer"
+        >
+          <div class="service-img">
+            <div class="service-icon">💻</div>
+          </div>
+          <h3>Web Design</h3>
+          <p>"Building simple web pages using HTML and CSS."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section class="about" id="about">
+      <div class="about-image">
+        <div class="about-img-frame">
+          <img
+            src="KMOU3603.jpg.jpeg"
+            alt="Refa"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+        <div class="about-accent-block"></div>
+      </div>
+      <div class="about-content">
+        <div class="section-header left">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-underline"></div>
+        </div>
+        <blockquote class="about-quote">
+          "I'm an Informatics Engineering student with a passion for visual
+          design and photography. I enjoy creating graphics and editing photos
+          using Adobe Photoshop, and I'm currently developing my skills in web
+          development."
+        </blockquote>
+        <ul class="about-checklist">
+          <li>
+            <span class="check-icon">✔</span> Informatics Engineering student
+            since 2025
+          </li>
+          <li>
+            <span class="check-icon">✔</span> Passionate about photography using
+            mirrorless camera
+          </li>
+          <li>
+            <span class="check-icon">✔</span> Experienced in photo editing using
+            Photoshop
+          </li>
+          <li>
+            <span class="check-icon">✔</span> Building skills in HTML, CSS, and
+            C++ programming
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="section-header">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="portfolio-grid">
+        <div
+          class="portfolio-card"
+          data-aos
+          onclick="openModal('menu utama.png')"
+          style="cursor: pointer"
+        >
+          <div class="portfolio-thumb programming">
+            <img
+              src="PROGRAMMING.jpg"
+              alt="Programming"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="portfolio-icon">⌨️</div>
+          </div>
+          <p class="portfolio-label">Programming</p>
+        </div>
+        <div
+          class="portfolio-card"
+          data-aos
+          onclick="openModal('photography.jpeg')"
+          style="cursor: pointer"
+        >
+          <div class="portfolio-thumb photography">
+            <img
+              src="PHOTOGRAPHY.jpg"
+              alt="Photography"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="portfolio-icon">📷</div>
+          </div>
+          <p class="portfolio-label">Photography</p>
+        </div>
+        <div
+          class="portfolio-card"
+          data-aos
+          onclick="openModal('Hari Lahir Pancasila.png')"
+          style="cursor: pointer"
+        >
+          <div class="portfolio-thumb poster">
+            <img
+              src="POSTER.jpg"
+              alt="Poster Design"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="portfolio-icon">🖌️</div>
+          </div>
+          <p class="portfolio-label">Poster Design</p>
+        </div>
+        <div
+          class="portfolio-card"
+          data-aos
+          onclick="openModal('WEBLAYOUT.jpg')"
+          style="cursor: pointer"
+        >
+          <div class="portfolio-thumb weblayout">
+            <img
+              src="WEBLAYOUT.jpg"
+              alt="Web Layout"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="portfolio-icon">🌐</div>
+          </div>
+          <p class="portfolio-label">Web Layout</p>
+        </div>
+      </div>
+      <div class="portfolio-cta">
+        <a href="#contact" class="btn btn-primary">View My Project</a>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills" id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="skills-carousel-wrapper">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Previous">
+          &#8249;
+        </button>
+        <div class="skills-carousel" id="skillsCarousel">
+          <div class="skill-card">
+            <h4>Graphic Design</h4>
+            <div class="skill-logos">
+              <div class="logo-item">
+                <img
+                  src="photoshop.png"
+                  alt="Photoshop"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">PS</div>
+                <span>Photoshop</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="canva.png"
+                  alt="Canva"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">CV</div>
+                <span>Canva</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="ibispaintx.png"
+                  alt="Ibis Paint X"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">IP</div>
+                <span>Ibis Paint X</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>Photography</h4>
+            <div class="skill-logos">
+              <div class="logo-item">
+                <img
+                  src="photoshop.png"
+                  alt="Photoshop"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">PS</div>
+                <span>Photoshop</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="lightroom.png"
+                  alt="Lightroom"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">LR</div>
+                <span>Lightroom</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="fujixs20.png"
+                  alt="Fuji X-S20"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">FX</div>
+                <span>Fuji X-S20</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>Web Design</h4>
+            <div class="skill-logos">
+              <div class="logo-item">
+                <img
+                  src="html.png"
+                  alt="HTML5"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">HTML</div>
+                <span>HTML</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="css.png"
+                  alt="CSS3"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">CSS</div>
+                <span>CSS</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="javascript.png"
+                  alt="JavaScript"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">JS</div>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>Programming</h4>
+            <div class="skill-logos">
+              <div class="logo-item">
+                <img
+                  src="c++.png"
+                  alt="C++"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">C++</div>
+                <span>C++</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="dev c++.jpg"
+                  alt="Dev C++"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">DC</div>
+                <span>Dev C++</span>
+              </div>
+              <div class="logo-item">
+                <img
+                  src="vscode.png"
+                  alt="VS Code"
+                  class="logo-icon"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="logo-fallback" style="display: none">VS</div>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Next">
+          &#8250;
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>
+          Have a project in mind? I'm ready<br />to learn and create with you
+        </h2>
+        <div class="cta-btns">
+          <a href="#contact" class="btn btn-white">Hire Me</a>
+          <a href="#portfolio" class="btn btn-outline-white">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER / CONTACT ===== -->
+    <footer class="footer" id="contact">
+      <div class="footer-brand">
+        <p class="footer-name">Refa Puji Setya Ningsih</p>
+        <span class="badge badge-light"
+          >Informatics Student &amp; Visual Designer</span
+        >
+      </div>
+      <div class="footer-contacts">
+        <a href="mailto:refapuji12722@gmail.com" class="footer-link">
+          <img
+            src="gmail.png"
+            alt="Email"
+            class="footer-icon"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'inline-flex';
+            "
+          />
+          <span class="footer-icon-fallback" style="display: none">✉️</span>
+          refapuji12722@gmail.com
+        </a>
+        <a href="https://linkedin.com" class="footer-link" target="_blank">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn"
+            class="footer-icon"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'inline-flex';
+            "
+          />
+          <span class="footer-icon-fallback" style="display: none">💼</span>
+          refapuji12722@gmail.com
+        </a>
+        <a href="#" class="footer-link">
+          <img
+            src="github.png"
+            alt="Github"
+            class="footer-icon"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'inline-flex';
+            "
+          />
+          <span class="footer-icon-fallback" style="display: none">📱</span>
+          refapuji12722@gmail.com
+        </a>
+      </div>
+    </footer>
+
+    <!-- ===== MODAL FOTO ===== -->
+    <div id="serviceModal" class="modal-overlay" onclick="closeModal()">
+      <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">&#10005;</button>
+        <img id="modalImg" src="" alt="Service Preview" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
