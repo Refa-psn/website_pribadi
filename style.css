@@ -872,7 +872,16 @@ ul {
 }
 
 .footer-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.footer-icon-fallback {
   font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* =========================================================
@@ -980,6 +989,15 @@ ul {
   }
   .footer-link {
     justify-content: center;
+  }
+
+  .footer-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    border-radius: 4px;
+    flex-shrink: 0;
+    display: inline-block; /* ← tambahkan ini */
   }
 }
 
