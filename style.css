@@ -4,13 +4,13 @@
    ========================================================= */
 :root {
   /* Core palette */
-  --navy: #0d1b3e; /* deep navy – primary brand */
-  --navy-mid: #1a2e5a; /* mid navy – navbar, sections */
-  --navy-light: #243b6e; /* lighter navy – hover states */
-  --gold: #c9a84c; /* classic gold accent */
-  --gold-light: #e4c06e; /* light gold – hover / glow */
-  --gold-pale: #f5e6be; /* very pale gold – tint bg */
-  --cream: #fafaf7; /* off-white – section bg */
+  --navy: #0d1b3e;
+  --navy-mid: #1a2e5a;
+  --navy-light: #243b6e;
+  --gold: #c9a84c;
+  --gold-light: #e4c06e;
+  --gold-pale: #f5e6be;
+  --cream: #fafaf7;
   --white: #ffffff;
   --text-dark: #111827;
   --text-mid: #374151;
@@ -31,7 +31,7 @@
   --shadow-gold: 0 4px 20px rgba(201, 168, 76, 0.25);
 
   /* Typography */
-  --font-main: inherit; /* keep original font stack */
+  --font-main: inherit;
   --transition: 0.3s ease;
 }
 
@@ -224,7 +224,6 @@ ul {
   padding: 8px 16px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
-  font-size: 0.9rem;
   border-radius: var(--radius-sm);
   letter-spacing: 0.3px;
   transition: all var(--transition);
@@ -261,7 +260,6 @@ ul {
   overflow: hidden;
 }
 
-/* subtle geometric pattern on hero */
 .hero::before {
   content: "";
   position: absolute;
@@ -316,7 +314,6 @@ ul {
   flex-wrap: wrap;
 }
 
-/* image side */
 .hero-image {
   flex-shrink: 0;
   position: relative;
@@ -716,7 +713,6 @@ ul {
   margin-bottom: 18px;
 }
 
-/* Logo grid for each skill card */
 .skill-logos {
   display: flex;
   justify-content: center;
@@ -871,13 +867,19 @@ ul {
   color: var(--gold);
 }
 
+/* =============================================
+   FIX: footer-icon — display: inline-block
+   mencegah img {display:block} dari global reset
+   ============================================= */
 .footer-icon {
   width: 22px;
   height: 22px;
   object-fit: contain;
   border-radius: 4px;
   flex-shrink: 0;
+  display: inline-block;
 }
+
 .footer-icon-fallback {
   font-size: 1.1rem;
   display: inline-flex;
@@ -979,7 +981,7 @@ ul {
   }
 
   .skill-card {
-    min-width: calc(100% - 0px);
+    min-width: 100%;
   }
 
   .footer {
@@ -989,15 +991,6 @@ ul {
   }
   .footer-link {
     justify-content: center;
-  }
-
-  .footer-icon {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-    border-radius: 4px;
-    flex-shrink: 0;
-    display: inline-block; /* ← tambahkan ini */
   }
 }
 
